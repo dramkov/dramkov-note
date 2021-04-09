@@ -1,6 +1,6 @@
 {
   "name": "dramkov-note",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "bin": "dist/index.js",
   "publishConfig": {
@@ -17,10 +17,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dramkov-note/local-client": "^1.0.0"
+    "@dramkov-note/local-client": "^1.0.1"
   },
   "devDependencies": {
-    "@dramkov-note/local-api": "^1.0.0",
+    "@dramkov-note/local-api": "^1.0.1",
     "@types/node": "^14.14.37",
     "commander": "^7.2.0",
     "esbuild": "^0.11.6",
