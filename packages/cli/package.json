@@ -1,0 +1,29 @@
+{
+  "name": "dramkov-note",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsc --watch --preserveWatchOutput",
+    "prepublishOnly": "esbuild src/index.ts --platform=node --outfile=dist/index.js --bundle --minify --define:process.env.NODE_ENV=\"production\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dramkov-note/local-client":"^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "@dramkov-note/local-api": "^1.0.0",
+    "commander": "^7.2.0",
+    "esbuild": "^0.11.6",
+    "typescript": "^4.2.4"
+  }
+}
